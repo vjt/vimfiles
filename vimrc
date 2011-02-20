@@ -292,9 +292,6 @@ nnoremap <leader>b :BufExplorer<cr>
 "map Q to something useful
 noremap Q gq
 
-"make Y consistent with C and D
-nnoremap Y y$
-
 "mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 
