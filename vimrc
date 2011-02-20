@@ -274,29 +274,14 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme railscasts
+    colorscheme torte
     set guitablabel=%M%t
-    set lines=40
-    set columns=115
-
-    if has("gui_gnome")
-        set term=gnome-256color
-        colorscheme railscasts
-        set guifont=Monospace\ Bold\ 12
-    endif
 
     if has("gui_mac") || has("gui_macvim")
-        set guifont=Menlo:h14
-        " key binding for Command-T to behave properly
-        " uncomment to replace the Mac Command-T key to Command-T plugin
-        "macmenu &File.New\ Tab key=<nop>
-        "map <D-t> :CommandT<CR>
+        set guifont=Anonymous:h10
         " make Mac's Option key behave as the Meta key
         set invmmta
-        try
-          set transparency=5
-        catch
-        endtry
+        set transparency=10
     endif
 
     if has("gui_win32") || has("gui_win32s")
@@ -304,15 +289,8 @@ if has("gui_running")
         set enc=utf-8
     endif
 else
-    "dont load csapprox if there is no gui support - silences an annoying warning
-
-    "set railscasts colorscheme when running vim in gnome terminal
-    if $COLORTERM == 'gnome-terminal'
-        set term=gnome-256color
-        colorscheme railscasts
-    else
-        colorscheme default
-    endif
+    colorscheme default
+    set bg=dark
 endif
 
 " PeepOpen uses <Leader>p as well so you will need to redefine it so something
