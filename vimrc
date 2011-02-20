@@ -304,6 +304,9 @@ map <A-q> :cclose<CR>
 map <A-j> :cnext<CR>
 map <A-k> :cprevious<CR>
 
+"Mappings for align
+map <Leader>= :Align<CR>
+
 "visual search mappings
 function! s:VSetSearch()
     let temp = @@
