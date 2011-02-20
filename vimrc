@@ -117,9 +117,6 @@ set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 set laststatus=2
 
-"turn off needless toolbar and scrollbars, thanks
-set guioptions=egmt
-
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
@@ -275,7 +272,6 @@ set ttymouse=xterm2
 
 "hide buffers when not displayed
 set hidden
-set ls=2
 
 "colorscheme and background - DARK
 colorscheme default

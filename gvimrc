@@ -4,6 +4,9 @@ set t_Co=256
 colorscheme torte
 set guitablabel=%M%t
 
+"turn off needless toolbar and scrollbars, thanks
+set guioptions=egmt
+
 if has("gui_mac") || has("gui_macvim")
   " make Mac's Option key behave as the Meta key
   set invmmta
