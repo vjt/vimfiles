@@ -228,6 +228,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set autoindent
+set smartindent
+set cinoptions={.5s,:.5s,+.5s,t0,g0,^-2,e-2,n-2,p2s,(0,=.5s
+set cindent
 
 "folding settings
 set foldmethod=indent   "fold based on indent
@@ -237,6 +240,10 @@ set nofoldenable        "dont fold by default
 set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+
+"search case settings
+set ignorecase
+set smartcase
 
 "display tabs and trailing spaces
 "set list
