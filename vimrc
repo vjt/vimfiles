@@ -28,6 +28,19 @@ set directory=~/.vim/swap
 "auto :w on :next, :prev, etc
 set autowrite
 
+"c	Auto-wrap comments using textwidth, inserting the current comment leader automatically.
+"r	Automatically insert the current comment leader after hitting <Enter> in Insert mode.
+"o	Automatically insert the current comment leader after hitting 'o' or 'O' in Normal mode.
+"q	Allow formatting of comments with "gq".
+"a	Automatic formatting of paragraphs.  Every time text is inserted or deleted the paragraph
+"   will be reformatted.  See |auto-format|.  When the 'c' flag is present this only happens
+"   for recognized comments.
+"n	When formatting text, recognize numbered lists.  This actually uses
+"l	Long lines are not broken in insert mode:
+set formatoptions=croqlan
+
+set textwidth=100
+
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
 vmap <D-j> gj
@@ -232,8 +245,6 @@ set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 "set list
 "set listchars=tab:\ \ ,extends:>,precedes:<
 " disabling list because it interferes with soft wrap
-
-set formatoptions-=o "dont continue comments when pushing o/O
 
 "vertical/horizontal scroll off settings
 set scrolloff=3
