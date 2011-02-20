@@ -270,32 +270,9 @@ set ttymouse=xterm2
 set hidden
 set ls=2
 
-if has("gui_running")
-    "tell the term has 256 colors
-    set t_Co=256
-
-    colorscheme torte
-    set guitablabel=%M%t
-
-    if has("gui_mac") || has("gui_macvim")
-        set guifont=Anonymous:h10
-        " make Mac's Option key behave as the Meta key
-        set invmmta
-        set transparency=10
-    endif
-
-    if has("gui_win32") || has("gui_win32s")
-        set guifont=Consolas:h12
-        set enc=utf-8
-    endif
-else
-    colorscheme default
-    set bg=dark
-endif
-
-" PeepOpen uses <Leader>p as well so you will need to redefine it so something
-" else in your ~/.vimrc file, such as:
-" nmap <silent> <Leader>q <Plug>PeepOpen
+"colorscheme and background - DARK
+colorscheme default
+set bg=dark
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
