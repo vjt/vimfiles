@@ -73,7 +73,7 @@ set statusline+=%m      "modified flag
 set statusline+=%r      "read only flag
 
 "Git
-set statusline+=\ [%{GitBranch()}]
+set statusline+=\ %{StatuslineGitBranch()}
 
 "display a warning if fileformat isnt unix
 set statusline+=%#warningmsg#
@@ -122,6 +122,17 @@ set guioptions=egmt
 
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
+
+"returns the current checked out branch inside square brackets if
+"we're in a Git repository, nothing otherwise.
+function! StatuslineGitBranch()
+    let branch = GitBranch()
+    if branch == ''
+        return ''
+    else
+        return '[' . branch . ']'
+    endif
+endfunction
 
 "return '[Trailing \s]' if trailing white space is detected
 "return '' otherwise
