@@ -62,9 +62,6 @@ nmap <D-4> g$
 nmap <D-6> g^
 nmap <D-0> g^
 
-"disable visual bell
-set visualbell t_vb=
-
 "try to make possible to navigate within lines of wrapped lines
 nmap <Down> gj
 nmap <Up> gk
