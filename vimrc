@@ -89,12 +89,14 @@ set statusline+=%h      "help file flag
 set statusline+=\ %y      "filetype
 
 "display a warning if &et is wrong, or we have mixed-indenting
-"set statusline+=%#error#
-"set statusline+=%{StatuslineTabWarning()}
-"set statusline+=%*
-"
-"set statusline+=%{StatuslineTrailingSpaceWarning()}
-"
+set statusline+=\ %#error#
+set statusline+=%{StatuslineTabWarning()}
+set statusline+=%*
+
+set statusline+=\ %#error#
+set statusline+=%{StatuslineTrailingSpaceWarning()}
+set statusline+=%*
+
 "set statusline+=%{StatuslineLongLineWarning()}
 "
 set statusline+=%#warningmsg#
@@ -121,19 +123,18 @@ set guioptions=egmt
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
-"return '[\s]' if trailing white space is detected
+"return '[Trailing \s]' if trailing white space is detected
 "return '' otherwise
 function! StatuslineTrailingSpaceWarning()
     if !exists("b:statusline_trailing_space_warning")
         if search('\s\+$', 'nw') != 0
-            let b:statusline_trailing_space_warning = '[\s]'
+            let b:statusline_trailing_space_warning = '[Trailing \s]'
         else
             let b:statusline_trailing_space_warning = ''
         endif
     endif
     return b:statusline_trailing_space_warning
 endfunction
-
 
 "return the syntax highlight group under the cursor ''
 function! StatuslineCurrentHighlight()
@@ -245,11 +246,6 @@ set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 set ignorecase
 set smartcase
 
-"display tabs and trailing spaces
-"set list
-"set listchars=tab:\ \ ,extends:>,precedes:<
-" disabling list because it interferes with soft wrap
-
 "vertical/horizontal scroll off settings
 set scrolloff=3
 set sidescrolloff=7
@@ -261,6 +257,10 @@ filetype indent on
 
 "turn on syntax highlighting
 syntax on
+
+"highlight trailing whitespace
+set list
+set listchars=tab:»·,trail:· ",eol:¶
 
 "some stuff to get the mouse going in term
 set mouse=a
