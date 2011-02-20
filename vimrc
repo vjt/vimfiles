@@ -1,3 +1,11 @@
+"CamelCaseMotion
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
+
 "load pathogen managed plugins
 call pathogen#runtime_append_all_bundles()
 
