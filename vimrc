@@ -86,7 +86,7 @@ set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
 set statusline+=%*
 
 set statusline+=%h      "help file flag
-set statusline+=\ %y      "filetype
+set statusline+=\ %y    "filetype
 
 "display a warning if &et is wrong, or we have mixed-indenting
 set statusline+=\ %#error#
