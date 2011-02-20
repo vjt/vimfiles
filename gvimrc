@@ -15,3 +15,7 @@ if has("gui_win32") || has("gui_win32s")
   set guifont=Consolas:h12
   set enc=utf-8
 endif
+
+"highlight trailing whitespace
+set list
+set listchars=tab:»·,trail:· ",eol:¶

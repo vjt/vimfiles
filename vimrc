@@ -258,10 +258,6 @@ filetype indent on
 "turn on syntax highlighting
 syntax on
 
-"highlight trailing whitespace
-set list
-set listchars=tab:»·,trail:· ",eol:¶
-
 "some stuff to get the mouse going in term
 set mouse=a
 set ttymouse=xterm2
