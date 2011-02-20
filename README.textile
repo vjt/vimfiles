@@ -8,20 +8,14 @@ Mac. Download from:
 
 h1. Bundled Plugins
 
-* "Ack":http://www.vim.org/scripts/script.php?script_id=2572 - type :Ack [search pattern] to search your entire project
 * "Align":http://www.vim.org/scripts/script.php?script_id=294 - align blocks of text using equal sign, make comment boxes and more
-* "bufexplorer":http://www.vim.org/scripts/script.php?script_id=42 - manage your file buffers
 * "Command-T":http://www.vim.org/scripts/script.php?script_id=3025 - the fastest and most intuitive way for opening files in your project
 * "cucumber":http://www.vim.org/scripts/script.php?script_id=2973 - support for cucumber features such as syntax highlight, indentation, etc
 * "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - support to close Ruby blocks such as 'if', 'do' with 'end'
-* "fugitive":http://www.vim.org/scripts/script.php?script_id=2975 - support for Git, adding convenient commands such as :Gstatus, :Gread, :Gmove
 * "haml":http://www.vim.org/scripts/script.php?script_id=1773 - syntax highlight for HAML
 * "markdown":http://www.vim.org/scripts/script.php?script_id=1242 - syntax highlight for Markdown
-* "NERD_commenter":http://www.vim.org/scripts/script.php?script_id=1218 - support to comment lines of code
 * "NERD_tree":http://www.vim.org/scripts/script.php?script_id=1658 - project pane that you can open with [leader] p
-* "ragtag":http://www.vim.org/scripts/script.php?script_id=1896 - easier way to create tags for html, erb, etc
 * "rails":http://www.vim.org/scripts/script.php?script_id=1567 - lot's of tools to make it easier to manage your Rails projects
-* "snipmate":https://github.com/akitaonrails/snipmate.vim - support for textmate-like snippets for several languages
 * "supertab":http://www.vim.org/scripts/script.php?script_id=1643 - pseudo auto-complete with tab
 * "surround":http://www.vim.org/scripts/script.php?script_id=1697 - add, change, remove surrounding parentheses, brackets, quotes, etc
 * "syntastic":http://www.vim.org/scripts/script.php?script_id=2736 - checks for syntax errors in many languages
@@ -100,7 +94,7 @@ h2. Dependencies
 
 You will need these dependencies figured out:
 
-* Ruby (for the fuzzy finder plugin)
+* Ruby
 * Exuberant Ctags (http://ctags.sourceforge.net/)
 * Ncurses-term (in Linux only)
 
