@@ -251,10 +251,6 @@ set ttymouse=xterm2
 "hide buffers when not displayed
 set hidden
 
-"Command-T configuration
-let g:CommandTMaxHeight=10
-let g:CommandTMatchWindowAtTop=1
-
 if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
@@ -290,7 +286,6 @@ if has("gui_running")
     endif
 else
     "dont load csapprox if there is no gui support - silences an annoying warning
-    let g:CSApprox_loaded = 1
 
     "set railscasts colorscheme when running vim in gnome terminal
     if $COLORTERM == 'gnome-terminal'
@@ -314,9 +309,6 @@ inoremap <C-L> <C-O>:nohls<CR>
 
 "map to bufexplorer
 nnoremap <leader>b :BufExplorer<cr>
-
-"map to CommandT TextMate style finder
-nnoremap <leader>t :CommandT<CR>
 
 "map Q to something useful
 noremap Q gq
