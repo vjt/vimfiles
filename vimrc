@@ -22,6 +22,9 @@ set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
 
+"put swap files here
+set directory=~/.vim/swap
+
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
 vmap <D-j> gj
