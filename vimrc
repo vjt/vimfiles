@@ -75,9 +75,6 @@ set statusline+=%r      "read only flag
 "Git
 set statusline+=\ [%{GitBranch()}]
 
-"RVM
-"set statusline+=%{exists('g:loaded_rvm')?rvm#statusline_ft_ruby():''}
-
 "display a warning if fileformat isnt unix
 set statusline+=%#warningmsg#
 set statusline+=%{&ff!='unix'?'['.&ff.']':''}
