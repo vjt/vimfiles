@@ -47,7 +47,7 @@ set autowrite
 "l	Long lines are not broken in insert mode:
 set formatoptions=croqlan
 
-set textwidth=100
+set textwidth=78
 set encoding=utf-8
 
 "highlight trailing whitespace
