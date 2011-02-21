@@ -57,9 +57,15 @@
 [submodule "bundle/vim-textobj-user"]
   path = bundle/vim-textobj-user
   url = git://github.com/kana/vim-textobj-user.git
+  ignore = dirty
 [submodule "bundle/vim-textobj-rubybloc"]
   path = bundle/vim-textobj-rubybloc
   url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+  ignore = dirty
 [submodule "bundle/vim-preview"]
   path = bundle/vim-preview
   url = git://github.com/greyblake/vim-preview.git
+  ignore = dirty
+[submodule "bundle/vim-git"]
+	path = bundle/vim-git
+	url = git://github.com/tpope/vim-git.git
