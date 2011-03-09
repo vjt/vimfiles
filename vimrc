@@ -277,8 +277,10 @@ syntax on
 set mouse=a
 set ttymouse=xterm2
 
-"hide buffers when not displayed
-set hidden
+"Hide buffers when not displayed
+"Disabled because long editor sessions start leaking
+"lots of memory, and I DON'T WANT TO RESTART MY EDITOR.
+"set hidden
 
 "colorscheme and background - DARK
 colorscheme default
