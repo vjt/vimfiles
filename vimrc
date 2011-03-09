@@ -30,8 +30,10 @@ set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
 
-"put swap files here
-set directory=~/.vim/swap
+"Put swap files here
+"Disabled because it is unsafe, if you share the same
+"source directory either via NFS or vmhgfs (my case).
+"set directory=~/.vim/swap
 
 "auto :w on :next, :prev, etc
 set autowrite
