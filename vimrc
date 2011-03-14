@@ -52,10 +52,6 @@ set formatoptions=croqlan
 set textwidth=78
 set encoding=utf-8
 
-"highlight trailing whitespace
-set list
-set listchars=tab:»·,trail:· ",eol:¶
-
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
 vmap <D-j> gj
