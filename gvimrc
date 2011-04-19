@@ -1,7 +1,7 @@
 "tell the term has 256 colors
 set t_Co=256
 
-colorscheme torte
+colorscheme solarized
 set guitablabel=%M%t
 
 "turn off needless toolbar and scrollbars, thanks
