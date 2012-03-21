@@ -351,3 +351,23 @@ nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
+
+"Copy and paste from X clipboard -
+"http://vim.wikia.com/wiki/Accessing_the_system_clipboard#Simple_Work_around_for_X_Clipboards
+"Clipboard
+com -range Cz :silent :<line1>,<line2>w !xsel -i -b
+"Primary
+com -range Cx :silent :<line1>,<line2>w !xsel -i -p
+"Secondary
+com -range Cv :silent :<line1>,<line2>w !xsel -i -s
+ca cv Cv
+ca cz Cz
+ca cx Cx
+
+"Paste
+com -range Pz :silent :r !xsel -o -b
+com -range Px :silent :r !xsel -o -p
+com -range Pv :silent :r !xsel -o -s
+ca pz Pz
+ca px Px
+ca pv Pv
