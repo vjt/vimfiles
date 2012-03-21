@@ -262,6 +262,13 @@ set scrolloff=3
 set sidescrolloff=7
 set sidescroll=1
 
+"screen/xterm title
+if &term == "screen" || &term == "screen-256color"
+  set t_ts=k
+  set t_fs=\
+  set title
+endif
+
 "load ftplugins and indent files
 filetype plugin on
 filetype indent on
