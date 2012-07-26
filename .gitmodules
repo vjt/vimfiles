@@ -2,10 +2,6 @@
   path = bundle/rails
   url = git://github.com/tpope/vim-rails.git
   ignore = dirty
-[submodule "bundle/cucumber"]
-  path = bundle/cucumber
-  url = git://github.com/tpope/vim-cucumber.git
-  ignore = dirty
 [submodule "bundle/surround"]
   path = bundle/surround
   url = git://github.com/tpope/vim-surround.git
@@ -41,10 +37,6 @@
 [submodule "bundle/scss-syntax"]
   path = bundle/scss-syntax
   url = http://github.com/cakebaker/scss-syntax.vim.git
-  ignore = dirty
-[submodule "bundle/vim-coffee-script"]
-  path = bundle/vim-coffee-script
-  url = git://github.com/kchmck/vim-coffee-script.git
   ignore = dirty
 [submodule "bundle/supertab"]
   path = bundle/supertab
