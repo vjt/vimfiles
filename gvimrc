@@ -11,7 +11,7 @@ if has("gui_mac") || has("gui_macvim")
   " make Mac's Option key behave as the Meta key
   set invmmta
   set guifont=Anonymous:h10
-  set transparency=10
+  set transparency=0
 endif
 
 if has("gui_win32") || has("gui_win32s")
