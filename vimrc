@@ -286,7 +286,7 @@ set ttymouse=xterm2
 "set hidden
 
 "colorscheme and background - DARK
-colorscheme default
+colorscheme torte
 set bg=dark
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
