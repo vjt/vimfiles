@@ -1,17 +1,3 @@
-h1. Purpose of this fork
-
-To make it less "magic" and "bloated" than the upstream.
-
-And to put in stuff I like :-)
-
-h1. Vim
-
-It is recommended that you use gVim in either Windows or Linux and MacVim for
-Mac. Download from:
-
-* (Windows) http://www.vim.org/download.php#pc (gvim73_46.exe)
-* (Mac) https://github.com/b4winckler/macvim/downloads (snapshot-56)
-
 h1. Bundled Plugins
 
 * "Align":http://www.vim.org/scripts/script.php?script_id=294 - align blocks of text using equal sign, make comment boxes and more
@@ -32,10 +18,6 @@ h1. Bundled Plugins
 * "vim-textobj-rubyblock":http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/ - smart block selection in Ruby code
 
 h1. Usage
-
-Troubleshoot: Because of the large amount of submodules, if you ever have any
-trouble after pulling from the repository, it will be easier to just back up 
-your old .vim folder and just git clone a new version.
 
 Clone this repo into your home directory either as .vim (linux/mac) or 
 vimfiles (Windows). Such as:
@@ -72,6 +54,22 @@ _gvimrc:
 <pre><code>
 source ~/vimfiles/gvimrc
 </code></pre>
+
+Troubleshoot: Because of the large amount of submodules, if you ever have any
+trouble after pulling from the repository, it will be easier to just back up
+your old .vim folder and just git clone a new version.
+
+Upgrading:
+
+<pre><code>
+git pull
+git submodule foreach git pull
+</code></pre>
+
+h1. System-wide installation
+
+* OpenSUSE: clone this repository in /usr/share/vim/site and use the contained vimrc as /etc/vim/vimrc
+* Debian: clone this repository in /var/lib/vim/addons and create a /etc/vim/vimrc.local file containing `source /var/lib/vim/addons/vimrc`.
 
 h2. Help Tags
 
@@ -113,5 +111,4 @@ h2. Credits
 
 * Original project and most of the heavy lifting: @scrooloose
 * All the cool plugins for Rails, Cucumber and more: @timpope
-* Great Command-T plugin by: Wincent
 * Hacks and some snippets: @akitaonrails
