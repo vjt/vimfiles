@@ -1,3 +1,5 @@
+runtime! debian.vim
+
 "CamelCaseMotion
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
