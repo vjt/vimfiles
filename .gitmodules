@@ -1,63 +1,63 @@
 [submodule "bundle/rails"]
-  path = bundle/rails
-  url = git://github.com/tpope/vim-rails.git
-  ignore = dirty
+	path = bundle/rails
+	url = git://github.com/tpope/vim-rails.git
+	ignore = dirty
 [submodule "bundle/surround"]
-  path = bundle/surround
-  url = git://github.com/tpope/vim-surround.git
-  ignore = dirty
+	path = bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+	ignore = dirty
 [submodule "bundle/NERD_tree"]
-  path = bundle/NERD_tree
-  url = git://github.com/scrooloose/nerdtree.git
-  ignore = dirty
+	path = bundle/NERD_tree
+	url = git://github.com/scrooloose/nerdtree.git
+	ignore = dirty
 [submodule "bundle/markdown"]
-  path = bundle/markdown
-  url = git://github.com/tpope/vim-markdown.git
-  ignore = dirty
+	path = bundle/markdown
+	url = git://github.com/tpope/vim-markdown.git
+	ignore = dirty
 [submodule "bundle/vividchalk"]
-  path = bundle/vividchalk
-  url = git://github.com/tpope/vim-vividchalk.git
-  ignore = dirty
+	path = bundle/vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
+	ignore = dirty
 [submodule "bundle/endwise"]
-  path = bundle/endwise
-  url = git://github.com/tpope/vim-endwise.git
-  ignore = dirty
+	path = bundle/endwise
+	url = git://github.com/tpope/vim-endwise.git
+	ignore = dirty
 [submodule "bundle/syntastic"]
-  path = bundle/syntastic
-  url = git://github.com/scrooloose/syntastic.git
-  ignore = dirty
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+	ignore = dirty
 [submodule "bundle/textile"]
-  path = bundle/textile
-  url = git://github.com/timcharper/textile.vim.git
-  ignore = dirty
+	path = bundle/textile
+	url = git://github.com/timcharper/textile.vim.git
+	ignore = dirty
 [submodule "bundle/vim-ruby"]
-  path = bundle/vim-ruby
-  url = git://github.com/vim-ruby/vim-ruby.git
-  ignore = dirty
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+	ignore = dirty
 [submodule "bundle/scss-syntax"]
-  path = bundle/scss-syntax
-  url = http://github.com/cakebaker/scss-syntax.vim.git
-  ignore = dirty
+	path = bundle/scss-syntax
+	url = http://github.com/cakebaker/scss-syntax.vim.git
+	ignore = dirty
 [submodule "bundle/supertab"]
-  path = bundle/supertab
-  url = git://github.com/ervandew/supertab.git
-  ignore = dirty
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+	ignore = dirty
 [submodule "bundle/vim-ruby-sinatra"]
-  path = bundle/vim-ruby-sinatra
-  url = git://github.com/hallison/vim-ruby-sinatra.git
-  ignore = dirty
+	path = bundle/vim-ruby-sinatra
+	url = git://github.com/hallison/vim-ruby-sinatra.git
+	ignore = dirty
 [submodule "bundle/vim-textobj-user"]
-  path = bundle/vim-textobj-user
-  url = git://github.com/kana/vim-textobj-user.git
-  ignore = dirty
+	path = bundle/vim-textobj-user
+	url = git://github.com/kana/vim-textobj-user.git
+	ignore = dirty
 [submodule "bundle/vim-textobj-rubybloc"]
-  path = bundle/vim-textobj-rubybloc
-  url = git://github.com/nelstrom/vim-textobj-rubyblock.git
-  ignore = dirty
+	path = bundle/vim-textobj-rubybloc
+	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+	ignore = dirty
 [submodule "bundle/vim-preview"]
-  path = bundle/vim-preview
-  url = git://github.com/greyblake/vim-preview.git
-  ignore = dirty
+	path = bundle/vim-preview
+	url = git://github.com/greyblake/vim-preview.git
+	ignore = dirty
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
