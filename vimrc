@@ -56,7 +56,7 @@ set encoding=utf-8
 
 " Enable entering diacritics and other marks
 " http://vim.wikia.com/wiki/Entering_special_characters
-set digraph
+" set digraph - no, it gets in the way.
 
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
