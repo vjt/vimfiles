@@ -129,6 +129,9 @@ set laststatus=2
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
+"remove trailing whitespace on save
+autocmd FileType c,cpp,javascript,ruby,eruby,html,css autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 "returns the current checked out branch inside square brackets if
 "we're in a Git repository, nothing otherwise.
 function! StatuslineGitBranch()
@@ -335,7 +338,6 @@ function! s:VSetSearch()
 endfunction
 vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
 vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
-
 
 "jump to last cursor position when opening a file
 "dont do it when writing a commit log entry
