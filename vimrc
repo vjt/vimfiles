@@ -130,7 +130,7 @@ set laststatus=2
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
 "remove trailing whitespace on save
-autocmd FileType c,cpp,javascript,ruby,eruby,html,css autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType c,cpp,javascript,ruby,eruby,html,css,haml autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 "returns the current checked out branch inside square brackets if
 "we're in a Git repository, nothing otherwise.
