@@ -108,9 +108,9 @@ set statusline+=%*
 
 "set statusline+=%{StatuslineLongLineWarning()}
 "
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 "display a warning if &paste is set
 set statusline+=%#error#
@@ -312,7 +312,7 @@ silent! nmap <silent> <Leader>X :TlistToggle<CR>
 noremap Q gq
 
 "mark syntax errors with :signs
-let g:syntastic_enable_signs=1
+"let g:syntastic_enable_signs=1
 
 "key mapping for vimgrep result navigation
 map <A-o> :copen<CR>
